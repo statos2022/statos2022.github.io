@@ -1,0 +1,6 @@
+<h2 class="section-title"><%= @labels['about'] %></h2>
+<p itemprop="description">
+STATOS 2022 is packed with cutting-edge in-depth 1-hour plenaries by world-class experts in machine learning, big data analytics, and optimization. A rare opportunity to listen, learn, and interact with experts in an intense half-day workshop.
+
+</p>
+
