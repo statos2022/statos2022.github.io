@@ -137,15 +137,19 @@ As for the security considerations, they apply beyond UAVs to any wireless devic
       {
         name: "Yonina Eldar",
         photo: "yonina_eldar.jpeg",
-        bio: `TBA`,
+        bio: `Yonina C. Eldar received the B.Sc. degree in Physics in 1995 and the B.Sc. degree in Electrical Engineering in 1996 both from Tel-Aviv University (TAU), Tel-Aviv, Israel, and the Ph.D. degree in Electrical Engineering and Computer Science in 2002 from the Massachusetts Institute of Technology (MIT), Cambridge. From January 2002 to July 2002 she was a Postdoctoral Fellow at the Digital Signal Processing Group at MIT.
+        <br/>
+        She is currently a Professor in the Department of Mathematics and Computer Science, Weizmann Institute of Science, Rehovot, Israel, where she holds the Dorothy and Patrick Gorman Professorial Chair and heads the Center for Biomedical Engineering. She was previously a Professor in the Department of Electrical Engineering at the Technion, where she held the Edwards Chair in Engineering. She is also a Visiting Professor at MIT, a Visiting Scientist at the Broad Institute, an Adjunct Professor at Duke University, an Advisory Professor of Fudan University, and was a Visiting Professor at Stanford. She is a member of the Israel Academy of Sciences and Humanities (elected 2017), an IEEE Fellow, a EURASIP Fellow, and a Fellow of the 8400 Health Network.`,
         company: "Weizman Inst.",
         link: {
           href: "https://www.weizmann.ac.il/math/yonina/",
           text: "(Website)"
         },
         presentation: {
-          title: "TBA",
-          description: `TBA`,
+          title: "Model Based Deep Learning: Applications to Imaging and Communications",
+          description: `Deep neural networks provide unprecedented performance gains in many real-world problems in signal and image processing. Despite these gains, the future development and practical deployment of deep networks are hindered by their black-box nature, i.e., a lack of interpretability and the need for very large training sets.
+          <br/>
+          On the other hand, signal processing and communications have traditionally relied on classical statistical modeling techniques that utilize mathematical formulations representing the underlying physics, prior information and additional domain knowledge. Simple classical models are useful but sensitive to inaccuracies and may lead to poor performance when real systems display complex or dynamic behavior. Here we introduce various approaches to model based learning which merge parametric models with optimization tools and classical algorithms leading to efficient, interpretable networks from reasonably sized training sets.  We will consider examples of such model-based deep networks to image deblurring, image separation, super resolution in ultrasound and microscopy, efficient communication systems, and finally we will see how model-based methods can also be used for efficient diagnosis of COVID19 using X-ray and ultrasound.`,
           time: "5:30-6:20"
         }
       },
