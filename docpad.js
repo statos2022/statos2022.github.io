@@ -66,10 +66,6 @@ module.exports = {
     // The entire schedule
     schedule: [
       {
-        name: "Welcome and opening remarks",
-        time: "1:30-2:00"
-      },
-      {
         name: "Alexander Jung",
         photo: "alexander_jung.jpeg",
         bio: 'Alexander Jung obtained a Ph.D. (with sub auspiciis) in 2012 from Technical University Vienna. After Post-Doc periods at TU Vienna and ETH Zurich,  he joined Aalto University as an Assistant Professor for Machine Learning in 2015. He leads the group “Machine Learning for Big Data” which studies explainable machine learning in network structured data. Alex first-authored a paper that won a Best Student Paper Award at IEEE ICASSP 2011. He received an AWS Machine  Learning Research Award and was the "Computer Science Teacher of the Year" at Aalto University in 2018. Currently he serves as an associate editor for the IEEE Signal Processing Letters and as the chair of the IEEE Finland Jt. Chapter on Signal Processing and Circuits and Systems. His textbook "Machine Learning: The Basics" has been published by Springer in 2022.',
@@ -81,7 +77,7 @@ module.exports = {
         presentation: {
           title: "Networked Federated Learning",
           description: "Many important application domains generate distributed collections of  heterogeneous local datasets. These local datasets are related via an intrinsic network  structure that arises from domain-specific notions of similarity between local datasets.  Networked federated learning combines information in local data and their network  structure to learn accurate personalized models in a distributed fashion.  We formulate  networked federated learning as an instance of regularized empirical risk minimization  using generalized total variation (GTV) as a regularizer. This formulation unifies and considerably extends recent approaches to federated learning. We develop a duality between GTV minimization and network flow optimization. This duality proves useful both computationally and conceptually. The network flow picture lends naturally to precise conditions on the network structure and local models such that network optimization algorithms are successful. ",
-          time: "2:00-2:50"
+          time: "1:00-2:00"
         }
       },
 
@@ -107,13 +103,8 @@ Distributed MIMO enables a swarm of UAVs to transmit multiple data streams simul
 Distributed BF can extend the communication range of a remotely deployed swarm, avoiding energy waste in travel towards the destination radio. In order to beamform, the UAVs typically rely on the destination feedback, however, noisy feedback degrades the BF gains. To limit the degradation, we developed an analytical framework to predict the BF gains at a given SNR and used it to optimize the signaling with the destination. The proposed framework was verified experimentally in the lab and using UAV-mounted software-defined-radios (SDR). We also developed a feedback-free BF approach that eliminates the need for destination feedback entirely in a LOS channel. In this approach, one BF radio acts as a guide and moves to point the beam of the remaining radios towards the destination. This approach tolerates localization error and was demonstrated using SDRs.
 <br/>
 As for the security considerations, they apply beyond UAVs to any wireless device. Security considerations include radio authentication and interpreting unauthorized signals. For device authentication, we leveraged the radios' RF fingerprint extracted using deep learning and formulated an open set classification problem to reject signals from unauthorized transmitters. We compared several approaches   and studied the training dataset impact on performance. To blindly decode unauthorized signals, we proposed the dual path network (DPN) combining digital signal processing and deep learning for modulation classification and blind symbol decoding. DPN design yields interpretable outputs and by jointly estimating the unknown parameters, it improves the modulation classification accuracy.        `,
-          time: "3:00-3:50"
+          time: "2:00-3:00"
         }
-      },
-
-      {
-        name: "Coffee break",
-        time: "3:50-4:30"
       },
 
       {
@@ -130,10 +121,29 @@ As for the security considerations, they apply beyond UAVs to any wireless devic
           description: `Rapid increases in the availability of data and computational resources have led to a paradigm shift in many areas of engineering and beyond. While in the past, the design and operation of engineering systems have been based on carefully crafted (physical) models, an abundance of data and processing capabilities has allowed them to be replaced by data-driven solutions, where the modelling step itself is delegated to the machine. Such underdetermined learning tasks frequently give rise to highly non-convex optimisation problems. Such problems can be NP-hard in the worst case, yet the practical success of gradient-based algorithms in many applications (such as back-propagation for deep learning) suggest that an important subset of non-convex optimisation problems can be solved both efficiently and reliably. Analytical guarantees of this kind have appeared only recently.
           <br/>
           At the same time, the democratisation of technology has caused both data and computational resources to be accessible at dispersed and heterogeneous locations, rather than powerful centralised processing centers. Data is generated and processed on our mobile devices, in sensors scattered throughout “smart cities” and “smart grids”, and vehicles on the road. Central aggregation of raw data is frequently neither efficient nor feasible, due to concerns around communication constraints, privacy, and robustness to link and node failure. The purpose of decentralised optimisation and learning is then to devise intelligent, data-driven, engineering systems by means of decentralised processing and peer-to-peer interactions, while preserving the strong performance guarantees of centralised architectures and yet ensuring communication efficiency, privacy and robustness. This talk will review recent results on the development and analysis of learning algorithms over networks and the associated performance trade-offs. `,
-          time: "4:30-5:20"
+          time: "3:00-4:00"
         }
       },
+      {
+        name: "Coffee break",
+        time: "4:00-4:30"
+      },
 
+      {
+        name: "Lara Dolecek",
+        photo: "lara_dolecek.jpeg",
+        bio: `Lara Dolecek is a Full Professor with the Electrical and Computer Engineering Department and Mathematics Department (courtesy) at the University of California, Los Angeles (UCLA). She holds a B.S. (with honors), M.S. and Ph.D. degrees in Electrical Engineering and Computer Sciences, as well as an M.A. degree in Statistics, all from the University of California, Berkeley. She received the 2007 David J. Sakrison Memorial Prize for the most outstanding doctoral research in the Department of Electrical Engineering and Computer Sciences at UC Berkeley. Prior to joining UCLA, she was a postdoctoral researcher with the Laboratory for Information and Decision Systems at the Massachusetts Institute of Technology. She received IBM Faculty Award (2014), Northrop Grumman Excellence in Teaching Award (2013), Intel Early Career Faculty Award (2013), University of California Faculty Development Award (2013), Okawa Research Grant (2013), NSF CAREER Award (2012), and Hellman Fellowship Award (2011). With her research group and collaborators, she received numerous best paper awards. Her research interests span coding and information theory, graphical models, statistical methods, and algorithms, with applications to emerging systems for data storage and computing. She currently serves as an Associate Editor for IEEE Transactions on Information Theory and as the Secretary of the IEEE Information Theory Society. Prof. Dolecek is 2021-2022 Distinguished Lecturer of the IEEE Information Theory Society. Prof. Dolecek has served as a consultant for a number of companies specializing in data communications and storage.`,
+        company: "UCLA",
+        link: {
+          href: "https://loris.seas.ucla.edu/about/",
+          text: "(Website)"
+        },
+        presentation: {
+          title: "Variable Coded Batch Matrix Multiplication",
+          description: `Coded computing is a popular method to overcome stragglers in distributed systems using tools from channel coding. A key task is to perform coded matrix-matrix multiplication. The majority of prior coded matrix-matrix computation literature has broadly focused in two directions: matrix partitioning for computing a single computation task and batch processing of multiple distinct computation tasks. While these works provide codes with good straggler resilience and fast decoding for their problem spaces, these codes would not be able to take advantage of the natural redundancy of re-using matrices across batch jobs. In this talk, we introduce the Variable Coded Distributed Batch Matrix Multiplication (VCDBMM) problem which tasks a distributed system to perform batch matrix multiplication where matrices are not necessarily distinct among batch jobs. We then present Flexible Cross-Subspace Alignments (FCSA) codes that are flexible enough to utilize this redundancy. We provide a full characterization of FCSA codes which allow for a wide variety of system complexities including good straggler resilience and fast decoding, and we discuss their performance under practical scenarios.`,
+          time: "4:30-5:30"
+        }
+      },
       {
         name: "Yonina Eldar",
         photo: "yonina_eldar.jpeg",
@@ -150,7 +160,7 @@ As for the security considerations, they apply beyond UAVs to any wireless devic
           description: `Deep neural networks provide unprecedented performance gains in many real-world problems in signal and image processing. Despite these gains, the future development and practical deployment of deep networks are hindered by their black-box nature, i.e., a lack of interpretability and the need for very large training sets.
           <br/>
           On the other hand, signal processing and communications have traditionally relied on classical statistical modeling techniques that utilize mathematical formulations representing the underlying physics, prior information and additional domain knowledge. Simple classical models are useful but sensitive to inaccuracies and may lead to poor performance when real systems display complex or dynamic behavior. Here we introduce various approaches to model based learning which merge parametric models with optimization tools and classical algorithms leading to efficient, interpretable networks from reasonably sized training sets.  We will consider examples of such model-based deep networks to image deblurring, image separation, super resolution in ultrasound and microscopy, efficient communication systems, and finally we will see how model-based methods can also be used for efficient diagnosis of COVID19 using X-ray and ultrasound.`,
-          time: "5:30-6:20"
+          time: "5:30-6:30"
         }
       },
     ],
